@@ -15,7 +15,7 @@ class GetAPIJSON {
 
   async apiGetCall(city) {
 //     Had to use https://cors-anywhere.herokuapp.com/ since the requests from openweather are http requests and https requests requires a subscription.
-    const url = `https://cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.apiKey}`;
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.apiKey}`;
     const results = await fetch(url);
     const resultData = await results.json();
     return resultData;
