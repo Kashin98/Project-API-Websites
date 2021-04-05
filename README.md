@@ -1,7 +1,7 @@
 # Project-API-Websites
 Built Multiple websites using APIs to understand AJAX programming. Also used bootstrap 4 framework for CSS to practice.
 
-Interesting Issue I faced when building this project:
+## Interesting Issue I faced when building this project:
 
 There is an issue hosting this website on Netlify and AWS Cloudfront traffic redirect distrbutions. The above services requests the website's resources over a https secure conn. While most of the APIs I used are delivering the resources over https. The Open Weather API requires I pay 40$ a month to request API calls over https instead of the free http option, understandable since not everything can be free. I think this will be an issue for anyone trying to deploy on netlify as their main platform since it doesn't have the option to give website access over http or I have not found it .
 
