@@ -8,6 +8,8 @@ There is an issue hosting this website on Netlify and AWS Cloudfront traffic red
 But how is it hosted on AWS Cloudfront where I always setup my Cloudfront distribution settings to redirect all traffic to HTTPS. Well the AWS CF settings are not the same for this CF distribution, for this distribution I gave the permission to allow HTTP and HTTPS. You can test it by changing the below cdn link to http:// or https:// and you will see them both go through, unlike all my other projects which always redirects to https://. Remember, if you change the link to https:// the weather app will fail due to the API calling an insecure resource over http which https will prevent, the error is visible in console when searching for a city.
 
 
+## AWS CDN Link and rest
+
 This is the bucket's direct Endpoint "http://project-cyberware.s3-website.ap-south-1.amazonaws.com" which is blocked
 
 Learned how to:
