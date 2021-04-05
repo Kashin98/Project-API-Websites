@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Favicon Credit - https://www.flaticon.com/free-icon/grocery_1261163?related_id=1261163 -->
+    <link rel="shortcut icon" href="./img/wiki.png" type="image/png" />
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Courgette"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/76be54988d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Wikipedia Search API</title>
+  </head>
+
+  <body>
+    <!-- Heading INtro -->
+    <a class="home" href="../../index.html"><i class="fas fa-home"></i> </a>
+    <h1 class="introText text-capitalize text-center my-3 pb-3">
+      Wikipedia Search API
+    </h1>
+    <section class="container">
+      <div class="row">
+        <div class="col">
+          <img
+            src="img/wiki.png"
+            class="img-fluid d-block mx-auto my-4 pb-4"
+            width="200"
+            alt=""
+          />
+          <div class="feedback alert alert-danger text-capitalize text-center">
+            empty value
+          </div>
+          <!-- Form -->
+          <form id="searchForm" class="my-3 search">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control text-capitalize"
+                id="search"
+                placeholder="search wikipedia..."
+              />
+              <div class="input-group-append">
+                <button type="submit" class="text-capitalize btn btn-primary">
+                  search
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="row output">
+        <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+          <!-- Single Element -->
+          <div class="card card-body infoCard">
+            <h3 class="card-title blueText">title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              perferendis?
+            </p>
+            <a href="#" target="_blank" class="my-2 text-capitalize test"
+              >read more...</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="footer">
+      <h3 class="disclaimer font-weight-light text-center my-1 pb-2">
+        "I COULD JUST USE WIKIPEDIA, WHAT IS THE POINT OF THIS
+        <strong>******</strong> PAGE ?"
+
+        <br />
+        Yes, I know.
+        <span
+          ><a
+            style="color: yellow"
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&format=json&list=search&srsearch="
+            >API here.</a
+          ></span
+        >
+      </h3>
+      <article class="d-flex justify-content-center">
+        <a class="link" href="../../index.html"><i class="fas fa-home"></i> </a>
+        <a class="link" target="_blank" href="https://github.com/Kashin98"
+          ><i class="fab fa-github"></i>
+        </a>
+        <a
+          class="link"
+          target="_blank"
+          href="https://www.linkedin.com/in/karan-kumar-445304155/"
+          ><i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          class="link"
+          target="_blank"
+          href="https://www.instagram.com/_kashin98/"
+          ><i class="fab fa-instagram"></i>
+        </a>
+      </article>
+    </section>
+
+    <!-- script js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

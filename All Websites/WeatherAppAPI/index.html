@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Courgette"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <!-- Icons made by https://www.flaticon.com/authors/good-ware -->
+
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/76be54988d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather App</title>
+  </head>
+
+  <body style="background: url('./img/defaultBg.jpg') center fixed no-repeat">
+    <!-- Home Link -->
+    <a class="home" href="../../index.html"><i class="fas fa-home"></i> </a>
+    <section class="container">
+      <div class="row">
+        <div class="col mt-3 col-md-8 mx-auto">
+          <div
+            class="feedback alert alert-danger text-capitalize text-center"
+          ></div>
+          <div class="card card-body">
+            <div class="pb-3 card-title text-center text-capitalize">
+              <i class="fas cloud fa-cloud"> </i>
+              <h3 class="intro d-inline">Weather App</h3>
+              <i class="fas cloud fa-cloud"> </i>
+            </div>
+
+            <!-- Weather Form -->
+            <form id="weatherForm">
+              <div class="input-group">
+                <input
+                  placeholder="Search City"
+                  type="text"
+                  class="intro form-control text-capitalize cityInput"
+                  id="cityInput"
+                />
+                <div class="input-group-append">
+                  <button type="submit" class="intro text-capitalize submitBtn">
+                    submit
+                  </button>
+                </div>
+              </div>
+            </form>
+            <!-- Results displayed -->
+            <div class="results text-center mt-3 al">
+              <h6 class="text text-capitalize">
+                city name : <span id="cityName"></span>
+              </h6>
+              <h6 class="text text-capitalize">
+                country : <span id="cityCountry"></span>
+              </h6>
+              <img src="#" id="cityIcon" />
+              <h6 class="text text-capitalize">
+                temperature: <span id="cityTemp"></span>
+                <span class="m-1">
+                  <!-- 
+       https://www.iconfinder.com/icons/667368/celcius_clouds_farenheit_sunshine_temerature_thermometer_weather_icon
+       Creative Commons (Attribution 3.0 Unported);
+https://www.iconfinder.com/bluewolfski            -->
+                  <img src="./img/temp.svg" alt="" />
+                </span>
+              </h6>
+              <h6 class="text text-capitalize">
+                humidity : <span id="cityHumidity"></span
+                ><span class="m-1">
+                  <!-- 
+       https://www.iconfinder.com/icons/2682807/drop_high_humidity_percentage_precipitation_rain_weather_icon
+       Creative Commons (Attribution 3.0 Unported);
+https://www.iconfinder.com/laurareen            -->
+                  <img src="./img/humidity.svg" alt="" />
+                </span>
+              </h6>
+              <h6 class="text text-capitalize">
+                It's <span class="weatherType"></span>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <h3 class="disclaimer font-weight-light text-center my-2">
+        This app finds the weather of 200,000+ cities.
+        <span
+          ><a
+            style="color: yellow"
+            target="_blank"
+            href="https://openweathermap.org/current"
+            >API Here</a
+          ></span
+        >
+        <br />
+        I bet the first 3 letters of your name is a city you didn't know
+        existed.
+      </h3>
+      <article class="d-flex justify-content-center">
+        <a class="link" href="../../index.html"><i class="fas fa-home"></i> </a>
+        <a class="link" target="_blank" href="https://github.com/Kashin98"
+          ><i class="fab fa-github"></i>
+        </a>
+        <a
+          class="link"
+          target="_blank"
+          href="https://www.linkedin.com/in/karan-kumar-445304155/"
+          ><i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          class="link"
+          target="_blank"
+          href="https://www.instagram.com/_kashin98/"
+          ><i class="fab fa-instagram"></i>
+        </a>
+      </article>
+    </section>
+    <!-- script js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+/* Home Link Styles */
+.home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  color: black;
+  padding: 10px;
+}
+.home:hover {
+  color: gray;
+}
+
+/* Joke style */
+#joke {
+  border: 2px black solid;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+/* Footer */
+.footer {
+  background: black;
+  padding: 1rem;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}
+.disclaimer {
+  font-size: 0.8rem;
+}
+
+.link {
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.link:hover {
+  color: yellow;
+}
+
+/* Screen Adjust */
+@media (max-width: 768px) {
+  .home {
+    position: relative;
+    margin: 20px;
+  }
+}

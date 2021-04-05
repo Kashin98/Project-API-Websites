@@ -1,0 +1,82 @@
+:root {
+  --mainWhite: azure;
+  --mainDark: #343434;
+  --mainBlue: #346699;
+}
+body {
+  background: var(--mainWhite);
+  color: var(--mainDark);
+}
+/* Home Icon */
+.home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  color: var(--mainBlue);
+  padding: 10px;
+}
+.home:hover {
+  color: rgba(3, 83, 83, 0.712);
+}
+.introText {
+  color: var(--mainBlue);
+}
+.search {
+  border-radius: 30px;
+}
+.infoCard {
+  border-radius: 10px;
+  border: 2px solid var(--mainDark);
+}
+
+.blueBtn {
+  background: transparent;
+  border: 0.15rem solid var(--mainBlue);
+  color: var(--mainBlue);
+  cursor: pointer;
+}
+.blueBtn:hover {
+  background: var(--mainBlue);
+  color: var(--mainDark);
+}
+.blueText {
+  color: var(--mainBlue);
+}
+.feedback {
+  display: none;
+}
+.loading {
+  display: block;
+  margin: 0 auto;
+  display: none;
+}
+.showItem {
+  display: block;
+}
+
+/* Footer */
+.footer {
+  background: black;
+  margin-top: 5rem;
+  padding: 1rem;
+  color: #fff;
+}
+.disclaimer {
+  font-size: 0.8rem;
+}
+.link {
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.link:hover {
+  color: yellow;
+}
+
+/* Screen Adjust */
+@media (max-width: 600px) {
+  .home {
+    position: relative;
+  }
+}

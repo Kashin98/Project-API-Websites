@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Favicon Credit - https://www.flaticon.com/free-icon/grocery_1261163?related_id=1261163 -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Courgette"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/76be54988d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>MockAPI Store</title>
+    <style></style>
+  </head>
+
+  <body>
+    <!-- Fixed Elements -  Home and Info Card -->
+    <a class="home" href="../../index.html"><i class="fas fa-home"></i> </a>
+    <a class="imgBtn" href="#"><i class="fas fa-image"></i></a>
+    <section class="infoCard">
+      <h5 class="pb-3">Image Values</h5>
+      <ul class="d-flex flex-column">
+        <li>Burger</li>
+        <li>Burrito</li>
+        <li>Cake</li>
+        <li>Pancake</li>
+        <li>Pasta</li>
+        <li>Salad</li>
+        <li>Salmon</li>
+        <li>Steak</li>
+      </ul>
+    </section>
+    <!-- Items Content -->
+    <section class="container">
+      <div class="row">
+        <div class="col col-md-8 mx-auto">
+          <h3 class="text-center mt-3">Item Form</h3>
+          <div class="feedback alert alert-danger text-capitalize text-center">
+            alert
+          </div>
+          <!-- form -->
+          <form id="httpForm" class="mb-5 mt-3">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"
+                  ><i class="fab fa-amazon"></i
+                ></span>
+              </div>
+              <input
+                type="text"
+                id="itemInput"
+                class="form-control"
+                placeholder="Enter Name"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"
+                  ><i class="fas fa-image"></i
+                ></span>
+              </div>
+              <input
+                type="text"
+                id="imageInput"
+                class="form-control"
+                placeholder="Image - Use Only Image Values"
+              />
+            </div>
+            <button
+              type="submit"
+              id="submitBtn"
+              class="btn submitBtn btn-block text-capitalize"
+            >
+              add item
+            </button>
+          </form>
+          <!-- list  -->
+          <div class="mt-5">
+            <h3 class="text-center">Item List</h3>
+            <ul class="list-group items">
+              <!-- Items added through API  -->
+            </ul>
+          </div>
+          <!-- end of list -->
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+      <h3 class="disclaimer font-weight-light text-center my-2">
+        This website <strong>Adds, Edits and Deletes items</strong> from my Mock
+        API setup
+        <span
+          ><a
+            style="color: yellow"
+            target="_blank"
+            href="https://www.mockapi.io/docs"
+            >here.</a
+          ></span
+        >
+        <br />
+        Check the changing item JSON data
+        <span
+          ><a
+            style="color: yellow"
+            target="_blank"
+            href="https://6059bdfbb11aba001745cc14.mockapi.io/items"
+            >here.</a
+          ></span
+        >
+        <br />
+        If there is no data, someone probably deleted it all, add something.
+        Remember all changes are permanent
+      </h3>
+      <article class="d-flex justify-content-center">
+        <a class="link" href="../../index.html"><i class="fas fa-home"></i> </a>
+        <a class="link" target="_blank" href="https://github.com/Kashin98"
+          ><i class="fab fa-github"></i>
+        </a>
+        <a
+          class="link"
+          target="_blank"
+          href="https://www.linkedin.com/in/karan-kumar-445304155/"
+          ><i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          class="link"
+          target="_blank"
+          href="https://www.instagram.com/_kashin98/"
+          ><i class="fab fa-instagram"></i>
+        </a>
+      </article>
+    </section>
+    <!-- script js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

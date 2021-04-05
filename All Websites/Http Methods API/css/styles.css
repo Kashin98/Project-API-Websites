@@ -1,0 +1,132 @@
+:root {
+  --mainBlack: #252627;
+  --mainDark: #000000;
+  --mainGreen: #90a959;
+  --mainRed: #a63d40;
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--mainBlack);
+  color: aqua;
+}
+/* Fixed Elements */
+.home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  color: aqua;
+  padding: 10px;
+}
+.home:hover,
+.imgBtn:hover {
+  color: rgba(11, 245, 245, 0.534);
+}
+.imgBtn {
+  display: none;
+}
+
+/* Items list */
+.itemName {
+  color: var(--mainBlack);
+}
+.item {
+  border-radius: 10px;
+  border: 3px aqua solid;
+  background: aliceblue;
+}
+.submitBtn {
+  color: aqua;
+  border: 0.1rem solid aqua;
+  background: transparent;
+  transition: all 0.3 ease-in-out;
+}
+.submitBtn:hover {
+  background: aqua;
+  color: var(--mainDark);
+}
+
+.infoCard {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  margin: 40px 10px;
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 10px;
+  background-color: aqua;
+  color: #000000;
+  align-items: center;
+  z-index: 5;
+  transition: all 0.5s;
+}
+.input-group-text {
+  background: aqua;
+}
+.input-group {
+  outline: none;
+  border: none;
+}
+.edit-icon {
+  text-decoration: none !important;
+  color: var(--mainGreen);
+}
+.delete-icon {
+  text-decoration: none !important;
+  color: var(--mainRed);
+}
+
+.itemIcon {
+  font-size: 1rem;
+}
+.itemIcon:hover {
+  color: var(--mainDark);
+}
+.feedback {
+  display: none;
+}
+.showItem {
+  display: block;
+}
+
+/* Footer */
+.footer {
+  background: black;
+  margin-top: 4rem;
+  padding: 1rem;
+  color: #fff;
+}
+.disclaimer {
+  font-size: 0.8rem;
+}
+.link {
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.link:hover {
+  color: yellow;
+}
+
+/* Screen Adjust */
+@media (max-width: 900px) {
+  .home {
+    position: relative;
+  }
+  .imgBtn {
+    display: inline;
+    position: relative;
+    font-size: 2rem;
+    color: aqua;
+    padding: 10px;
+    background-color: var(--mainBlack);
+    border: none;
+  }
+  .infoCard {
+    position: absolute;
+    transform: translateX(-200px);
+  }
+  .showInfoCard {
+    transform: translateX(0);
+  }
+}

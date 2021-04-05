@@ -1,0 +1,82 @@
+/* Home Icon Edit */
+.home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  color: white;
+  padding: 10px;
+}
+.home:hover {
+  color: aqua;
+}
+/* API Card */
+img {
+  width: 200px;
+  height: 200px;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 400px;
+  justify-content: center;
+}
+.img-container {
+  border-radius: 10px;
+}
+.card-container {
+  border: aqua 2px solid;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 6px aqua;
+}
+.details {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.card-data {
+  padding: 15px;
+  font-size: 1.1rem;
+}
+
+.generateBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+/* Footer */
+.footer {
+  background: aqua;
+  margin-top: 4rem;
+  padding: 1rem;
+  color: #fff;
+}
+.disclaimer {
+  font-size: 0.8rem;
+}
+.link {
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.link:hover {
+  color: black;
+}
+
+/* Screen adjust */
+@media (max-width: 600px) {
+  .home {
+    position: relative;
+  }
+  .main-container {
+    grid-template-columns: 280px;
+  }
+} ;
