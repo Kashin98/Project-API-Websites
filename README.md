@@ -8,7 +8,9 @@ This is the bucket's direct Endpoint "http://project-cyberware.s3-website.ap-sou
 Learned how to:
 
 1.) AJAX programming and all it's concepts.
+
 2.) Understood and practiced Bootstrap 4 framework for CSS.
+
 3.) Understanding APIs and JSON data.
 
 (All used AWS services expire around end of 2021 for this project)
