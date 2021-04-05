@@ -21,12 +21,9 @@
 /* Footer */
 .footer {
   background: black;
-  padding: 1rem;
+  padding: 2rem;
   color: #fff;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
+  margin-top: 10.5rem;
 }
 .disclaimer {
   font-size: 0.8rem;
