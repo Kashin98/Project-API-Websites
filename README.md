@@ -11,6 +11,8 @@ That is why entire website is being run over HTTP. This should not be an issue s
 
 ## AWS CDN Link and rest
 
+Hosted on AWS S3 using AWS Cloudfront service for a CDN. Redirecting all HTTP requests to HTTPS for secure conn.
+
 This is the bucket's direct Endpoint "http://project-api-websites.s3-website.ap-south-1.amazonaws.com" which is blocked. CDN link is below:
 
 CDN - "http://d194h18bge09ch.cloudfront.net/index.html"
