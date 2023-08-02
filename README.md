@@ -17,6 +17,10 @@ This is the bucket's direct Endpoint "http://project-api-websites.s3-website.ap-
 
 CDN - "http://d194h18bge09ch.cloudfront.net/index.html"
 
+(ALL AWS SERVICES ARE DISABLED, Hosting on netlify only)
+
+Netlify - "https://project-apis.netlify.app"
+
 Learned how to:
 
 1.) AJAX programming and all it's concepts.
